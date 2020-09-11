@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root{
+        --font: 1rem;
+        --line: calc(var(--font) * 2);
+        --move: calc(-1 * var(--line));
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: calc(1vh + 1vw + 10px);
+        font-weight: 100;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ffe593;
+        color: #851937;
+      }
+      header > h1 {
+        margin: 0;
+        padding: 1rem;
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, calc( ((100vw - 4rem)/3)) ); 
+        /* using 1fr will wreck the ellipsis fix for text wrapping */
+        grid-gap: 1rem;
+        grid-template-rows: auto;
+        margin: 1rem 0;
+        padding: 0 1rem;
+      }
+      .item > img {
+        width: 100%;
+        height: auto;
+        display:block; /* to get rid of the whitespace */
+      }
+      .label {
+        font-size: var(--font);
+        line-height: var(--line);
+        padding: 0 1rem;
+        margin: 0;
+        color: white;
+        background-color: hsla(0, 0%, 0%, 0.48);
+        height: var(--line);
+        /* margin-top: var(--move);
+        position:relative; */
+        
+        transform: translateY(var(--move));
+        margin-bottom: var(--move);
+        
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Text Overlaying Images</h1></header>
+    <main class="grid">
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/100/300/400" alt="placeholder" />
+            <p class="label">text description more</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/101/300/400" alt="placeholder" />
+            <p class="label">text description that is longer</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/102/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/103/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/104/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/115/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/106/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/107/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/108/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/109/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/110/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+        
+          <div class="item">
+            <img src="http://picsum.photos/id/111/300/400" alt="placeholder" />
+            <p class="label">text description</p>
+          </div>
+        
+      </ul>
+    </main>
+  </body>
+</html>

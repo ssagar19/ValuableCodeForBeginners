@@ -1,0 +1,17 @@
+.Main{
+height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 250px));
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-content: space-between;
+    grid-gap: 10px;
+
+
+}
+
+.sections{
+    border: 2px solid red;
+    text-align: center;
+
+}
