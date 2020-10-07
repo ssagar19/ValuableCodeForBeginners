@@ -38,3 +38,37 @@ if(t>=n){ return true;}
 else { return false; }
 
    }
+
+  
+
+
+// Exercise 3
+function findNemo(sentence) {
+var j = 0;
+    var c = sentence.split(' ');
+for(var i=0; i<c.length;i++){
+
+if(c[i] === 'Nemo'){j=i;}
+}
+
+
+return `I found the Nemo at ${j+1}!`
+   
+   
+   
+}
+
+
+// Exercise 4
+function arrayOperation(x, y, n) {
+var c =[];
+for(var i = x; i<y; i++){
+if(i%n===0){ c.push(i)};
+
+
+
+}
+
+return c;
+
+}
