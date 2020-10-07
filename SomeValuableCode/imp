@@ -1,0 +1,40 @@
+// Exercise 1
+function sockMerchant(sockNumbers) {
+if(sockNumbers.length ===0){ return 0};
+
+   let c = {};
+var g=0;
+    for(let val of sockNumbers){
+        c[val] = (c[val] || 0) + 1;
+    }
+
+for(s in c){ 
+ g = g+ Math.floor(c[s]/2);
+
+}
+return g;
+}
+
+
+
+
+Exercise 2
+
+
+   
+   function changeEnough(arr,n){
+
+ var r = [0.25, 0.10, 0.05,0.01];
+
+var t=0;
+for(var i = 0; i<arr.length; i++){
+
+t=t+arr[i]*r[i];
+
+
+
+}
+if(t>=n){ return true;}
+else { return false; }
+
+   }
