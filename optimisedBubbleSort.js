@@ -16,4 +16,4 @@ function bubbleSort(arr){
   return arr;
 }
 
-bubbleSort([8,1,2,3,4,5,6,7]);
+bubbleSort([8,12,34,4,5,6,7,2,3,1]);
