@@ -72,3 +72,41 @@ if(i%n===0){ c.push(i)};
 return c;
 
 }
+
+
+// Exercise 1
+function largestSwap(num) {
+var a= parseInt(num.toString().split('').reverse().join('')) * Math.sign(num);
+if(a<num){return true}
+return false;
+
+}
+
+
+// Exercise 2
+function mean(n){
+var c =0;
+var r=0;
+var t=0;
+while(n>=1){
+r=n%10;
+c=c+r;
+t++;
+n=Math.floor(n/10);
+
+}
+return c/t;
+
+}
+
+// Exercise 3
+function canAlternate(str){
+
+if(str.length % 2===0){
+return false
+}
+return true;
+
+} 
+
+
