@@ -1,4 +1,4 @@
-// Optimized BubbleSort with noSwaps
+// Optimized BubbleSort with noSwaps.
 function bubbleSort(arr){
   var noSwaps;
   for(var i = arr.length; i > 0; i--){
