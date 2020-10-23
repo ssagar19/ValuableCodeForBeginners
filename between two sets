@@ -5,7 +5,8 @@ You will be given two arrays of integers and asked to determine all integers tha
 The elements of the first array are all factors of the integer being considered
 The integer being considered is a factor of all elements of the second array
 
-Function Description
+Function Description is here:
+
 
 Complete the getTotalX function in the editor below. It should return the number of integers that are betwen the sets.
 
