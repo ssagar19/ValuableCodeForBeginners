@@ -1,3 +1,4 @@
+//code to sort 
 function selectionSort(arr){
 
 for(var i=0; i<arr.length;i++){
