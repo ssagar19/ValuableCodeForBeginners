@@ -1,4 +1,4 @@
-//code to sort array elements
+//code to sort array elements.
 function selectionSort(arr){
 
 for(var i=0; i<arr.length;i++){
