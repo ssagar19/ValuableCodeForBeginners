@@ -1,14 +1,14 @@
 function chunk(array,size){
 const newArray=[];
 
-for(let element of array){
+for(let ele of array){
 
 const last = newArray[newArray.length-1];
 if(!last || last.length===size){
-newArray.push([element]);
+newArray.push([ele]);
 }
 else{
-last.push(element);
+last.push(ele);
 }
 }
 return newArray;
